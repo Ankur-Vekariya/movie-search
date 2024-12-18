@@ -1,5 +1,4 @@
 "use client";
-import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import {
@@ -57,8 +56,6 @@ export default function Home() {
     fetchMovies();
     fetchTrending();
   }, [search]);
-
-  console.log("trendingList", trendingList, movieList);
 
   return (
     <div className="gap-14">
